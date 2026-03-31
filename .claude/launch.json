@@ -4,13 +4,13 @@
     {
       "name": "Python Static Server",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8000"],
+      "runtimeArgs": ["-m", "http.server", "--directory", "/tmp/naisha_portfolio", "8000"],
       "port": 8000
     },
     {
       "name": "npx serve",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "3000", "."],
+      "runtimeArgs": ["serve", "-l", "3000", "/tmp/naisha_portfolio"],
       "port": 3000
     }
   ]
